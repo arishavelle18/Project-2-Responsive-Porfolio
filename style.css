@@ -336,7 +336,13 @@ section .about-caption{
     color: #fff;
     font-size: 20px;
     letter-spacing: 1px;
+    margin-bottom: 0.5rem;
 }
+.section3 .card .box .contentBx div h2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
 .section3 .card .box .contentBx div p{
     color: #fff;
     font-size: 16px;
@@ -449,6 +455,19 @@ section .about-caption{
     
  }
  @media only screen and (max-width:600px){
+    html{
+        scroll-padding-top: 130px; 
+    }
+    .navbar .navbar-links a{
+        display: flex;
+        flex-direction: column;
+        font-size:10px;
+        margin-bottom: 0.3rem;
+        
+    }
+    .navbar .banner-title{
+        font-size: 2rem;
+    }
     .banner .caption{
         font-size: 1rem;
     }
@@ -456,7 +475,7 @@ section .about-caption{
         width: 200px;
         border-radius: 20px;
         /* vertical-align:middle; */
-        margin-top: 10rem;
+        margin-top: 15rem;
         margin-bottom: 1rem;
     }
     .banner .caption .account-links{
