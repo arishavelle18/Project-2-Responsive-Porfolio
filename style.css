@@ -1,0 +1,534 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; 
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-Family: 'Poppins', Sans-Serif;
+    line-height: 1;
+}
+header{
+    min-height: 70vh;
+    background-color: white;
+    display: flex;
+    flex: 1;
+    justify-content: stretch;
+    text-align: center;
+    letter-spacing: 4;
+    font-weight: 500;
+}
+.navbar{
+    background-color: #333;
+    padding:1rem 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;    
+}
+.container{
+    max-width:1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+.navbar .banner-title{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.navbar .navbar-links{
+    text-decoration: none;
+    padding:0.2rem 0 0.2rem 0;
+}
+.navbar .navbar-links a{
+    text-decoration: none;
+    color: #fff;
+    margin:0 0.5rem
+}
+.navbar-links a:hover,.banner-title:hover{
+    color: salmon;
+    transform: scale(1);
+    animation-name: clicknav;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+@keyframes clicknav {
+  100%{
+        transform: scale(1.2);
+    }
+}
+.banner{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.karl-image{
+    width: 300px;
+    border-radius: 20px;
+    /* vertical-align:middle; */
+    margin: 0 1rem;
+}
+.banner .caption{
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0 1rem;
+}
+.banner .caption span{
+    color:rgb(75, 72, 72);
+    font-weight: 500;
+    animation-name: glow;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+  50%{
+        color: saddlebrown;
+    }
+}
+.banner .caption .account-links{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1.4rem;
+
+}
+.banner .caption a{
+  
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 1rem 0.3rem;
+    
+}
+.banner a:hover{
+    transform: scale(1);
+    animation-name: click;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+@keyframes click {
+  100%{
+        transform: scale(1.2);
+    }
+}
+
+.section1{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    background: #CEE5D0;
+    min-height: 50vh;
+    padding: 2rem 0;
+}
+.cont{
+    width: 80%;
+    margin: 0 auto;
+}
+section .about-me{
+    text-align: center;
+    margin: 1rem 2rem;
+    
+    
+}
+section .about-me h2{
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 30px;
+    margin: 1rem 0;
+}
+section .about-caption{
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    
+}
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F6D7A7;
+    min-height: 70vh;
+    padding: 2rem 0;
+}
+.section2 .about-caption1{
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    
+}
+
+.section2 .skill-me{
+    text-align: center;
+    margin: 1rem 2rem;
+}
+.section2 .skill-me h2{
+    border-radius: 30px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0 10px;
+}
+.section2 .box1{
+    background-color: black;
+    width: 0%;
+    height: 20px;
+    animation-name:bar;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    border-radius: 30px;
+}
+.section2 .box2{
+    background-color: black;
+    width: 0%;
+    height: 20px;
+    animation-name:bar2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    border-radius: 30px;
+}
+.section2 .box3{
+    background-color: black;
+    width: 0%;
+    height: 20px;
+    animation-name:bar3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    border-radius: 30px;
+}
+.section2 p{
+    text-transform: uppercase;
+}
+@keyframes bar {
+    100%{
+        width: 80%;
+    }
+}
+@keyframes bar2 {
+    100%{
+        width: 75%;
+    }
+}
+@keyframes bar3 {
+    100%{
+        width: 70%;
+    }
+}
+.section2 .box4{
+    background-color: black;
+    width: 0%;
+    height: 20px;
+    animation-name:bar4;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    border-radius: 30px;
+}
+@keyframes bar4 {
+    100%{
+        width: 65%;
+    }
+}
+
+.section3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #C8E3D4;
+    min-height: 70vh;
+    padding: 2rem 0;
+}
+.projects{
+    text-align: center;
+    margin: 1rem 2rem;
+}
+.projects h2{
+    display: inline-block;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    padding: 0 10px;
+
+}
+.section3 .column .image{
+    display: inline-block;
+}
+.section3 .column .image img{
+    width:100%;
+    height:300px;
+    border-radius: 30px;
+}
+.section3 .caption{
+    display: inline-block;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+.section3 .card{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin:20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.section3 .card .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+.section3 .card:hover .box{
+    transform:rotateY(180deg);
+}
+.section3 .card .box .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.section3 .card .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.section3 .card .box .contentBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform:rotateY(180deg);
+}
+.section3 .card .box .contentBx div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg,#fe0061,#ffeb3b);
+    transform:translateZ(100px);
+}
+.section3 .card .box .contentBx div h2{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.section3 .card .box .contentBx div p{
+    color: #fff;
+    font-size: 16px;
+} 
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    
+}
+.footer .contact{
+    background: linear-gradient(90deg,#BAD7DF,#FFE2E2,#F6F6F6,#99DDCC);
+    padding:5rem 1rem;
+    margin: 2rem 0;
+    border-radius: 40px;
+    width: 50%;
+    border: 5px #333 solid;
+}
+.contact h2{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+.contact p{
+    color: #000;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.contact a{
+    text-decoration: none;
+    color:#fff;
+    background-color: #364F6B;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    
+}
+
+
+/* 
+/* media query */
+@media screen and (min-width:600px) {
+    .navbar-links a{
+       padding-right: 1rem;
+       padding-left: 1rem;
+    }
+    .navbar .banner-title{
+       font-size: 3rem;
+    }
+    .karl-image{
+        width: 300px;
+        border-radius: 20px;
+        /* vertical-align:middle; */
+        margin-top: 10rem;
+        margin-bottom: 1rem;
+    }
+    .banner .caption{
+        text-align: center;
+    }
+    .banner .caption .account-links{
+        display: flex;
+        justify-content: center;
+    }
+
+ }
+@media screen and (min-width:1020px) {
+    .navbar .container{
+       display: flex;
+       justify-content: space-between;
+       align-content: center;
+    }
+    .navbar .navbar-links{
+        display: flex;
+        align-items: center;
+    }
+    .banner .caption .account-links{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .banner .caption{
+        text-align: left;
+    }
+ }
+ @media only screen and (max-width:768px){
+    .banner .caption{
+        text-align: center;
+    }
+    .banner .caption .account-links{
+        display: flex;
+        justify-content: center;
+    }
+    .karl-image{
+        width: 300px;
+        border-radius: 20px;
+        /* vertical-align:middle; */
+        margin-top: 10rem;
+        margin-bottom: 1rem;
+    }
+    
+ }
+ @media only screen and (max-width:600px){
+    .banner .caption{
+        font-size: 1rem;
+    }
+    .karl-image{
+        width: 200px;
+        border-radius: 20px;
+        /* vertical-align:middle; */
+        margin-top: 10rem;
+        margin-bottom: 1rem;
+    }
+    .banner .caption .account-links{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .banner .caption .account-links a{
+        font-size: 20px;
+       
+    }
+    .banner .caption a{
+  
+        background-color: #333;
+        color: #fff;
+        padding: auto;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 10px;
+    
+        
+    }
+    section .about-caption{
+        font-size: 1rem;
+        padding: 0 2rem;
+        text-align: center;   
+    }
+    .section2 .about-caption1{
+        font-size: 1rem;
+        padding: 0 2rem;
+           
+    }
+    .footer{
+        display: flex;
+        flex:1;
+        justify-content: center;
+        align-items: center;
+        text-align: center;    
+        
+    }
+    .footer .contact{
+        background: linear-gradient(90deg,#BAD7DF,#FFE2E2,#F6F6F6,#99DDCC);
+        padding:2.5rem 1.5rem;
+        margin: 2rem 0;
+        border-radius: 40px;
+        width: 50%;
+        border: 5px #333 solid;
+    }
+    .contact h2{
+        display: inline-block;
+        background-color: black;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 30px;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    .contact p{
+        color: #000;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    .contact a{
+        text-decoration: none;
+        color:#fff;
+        background-color: #364F6B;
+        padding: 1rem 0.2rem;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        
+    }
+    
+    
+ }
