@@ -190,6 +190,7 @@ section .about-caption{
     animation-duration: 2s;
     animation-fill-mode: forwards;
     border-radius: 30px;
+    margin-bottom: 0.8rem;
 }
 .section2 .box2{
     background-color: black;
@@ -199,6 +200,7 @@ section .about-caption{
     animation-duration: 2s;
     animation-fill-mode: forwards;
     border-radius: 30px;
+    margin-bottom: 0.8rem;
 }
 .section2 .box3{
     background-color: black;
@@ -208,6 +210,7 @@ section .about-caption{
     animation-duration: 2s;
     animation-fill-mode: forwards;
     border-radius: 30px;
+    margin-bottom: 0.8rem;
 }
 .section2 p{
     text-transform: uppercase;
@@ -235,6 +238,7 @@ section .about-caption{
     animation-duration: 2s;
     animation-fill-mode: forwards;
     border-radius: 30px;
+    margin-bottom: 0.8rem;
 }
 @keyframes bar4 {
     100%{
@@ -461,8 +465,8 @@ section .about-caption{
     .navbar .navbar-links a{
         display: flex;
         flex-direction: column;
-        font-size:10px;
-        margin-bottom: 0.3rem;
+        font-size:15px;
+        margin-bottom: 1rem;
         
     }
     .navbar .banner-title{
