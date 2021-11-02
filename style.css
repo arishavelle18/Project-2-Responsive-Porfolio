@@ -460,15 +460,15 @@ section .about-caption{
  }
  @media only screen and (max-width:600px){
     html{
-        scroll-padding-top: 130px; 
+        scroll-padding-top: 200px; 
     }
-    .navbar{
+    .navbar .navbar-links a{
         display: flex;
         flex-direction: column;
         font-size:15px;
         margin-bottom: 1rem;
+        
     }
-    
     .navbar .banner-title{
         font-size: 2rem;
     }
