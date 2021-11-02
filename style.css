@@ -462,13 +462,13 @@ section .about-caption{
     html{
         scroll-padding-top: 130px; 
     }
-    .navbar .navbar-links a{
+    .navbar{
         display: flex;
         flex-direction: column;
         font-size:15px;
         margin-bottom: 1rem;
-        
     }
+    
     .navbar .banner-title{
         font-size: 2rem;
     }
